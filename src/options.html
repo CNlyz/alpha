@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 20px;
+        font: 14px/1.6 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        max-width: 720px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin: 16px 0;
+      }
+      input[type="checkbox"] {
+        transform: scale(1.15);
+      }
+      .field input[type="text"] {
+        width: 220px;
+        padding: 6px 8px;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,.2);
+      }
+      button {
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,.15);
+        background: #fff;
+        cursor: pointer;
+      }
+      .status {
+        margin-top: 10px;
+        color: #666;
+        font-size: 14px;
+      }
+      .hint {
+        color: #666;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="margin: 0 0 20px;">Alpha Extension 选项</h2>
+
+    <div class="row">
+      <div>
+        <div><strong>启用插件</strong></div>
+        <div class="hint">关闭后，交易页上的「下单面板」会隐藏并停止自动任务。</div>
+      </div>
+      <label>
+        <input id="enabled" type="checkbox" />
+      </label>
+    </div>
+
+    <div class="row field">
+      <div>
+        <div><strong>指示器颜色</strong></div>
+        <div class="hint">用于演示与通用“配置输入”示例。</div>
+      </div>
+      <div>
+        <input id="highlightColor" type="text" placeholder="#00ff88" />
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 16px;">
+      <button id="saveBtn" type="button">保存</button>
+      <div class="status" id="status"></div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
+

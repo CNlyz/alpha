@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 12px;
+        width: 220px;
+        font: 14px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      input[type="checkbox"] {
+        transform: scale(1.15);
+      }
+      .muted {
+        color: #666;
+        font-size: 14px;
+        margin-top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div>
+        <div><strong>Alpha Extension</strong></div>
+        <div class="muted">显示交易页上的下单面板</div>
+      </div>
+      <label title="关闭后页面上的下单面板会隐藏">
+        <input id="enabled" type="checkbox" />
+      </label>
+    </div>
+    <div id="status" class="muted"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
