@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "name": "Alpha Trade",
   "description": "通用 Chrome 插件骨架：后台服务、content 脚本、选项页与消息通信。",
-  "permissions": ["storage", "tabs", "scripting"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
   },
   "action": {
     "default_title": "Alpha Extension",
@@ -15,20 +22,26 @@
   "options_page": "src/options.html",
   "content_scripts": [
     {
+      "js": [
+        "assets/content.ts-DJwLp5Lz.js"
+      ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
         "https://www.binance.com/*/alpha"
       ],
-      "js": [
-        "src/content-common.js",
-        "src/content-ws.js",
-        "src/content-trade-buy.js",
-        "src/content-trade-sell.js",
-        "src/content-trade-ui.js",
-        "src/content.js"
-      ],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://www.binance.com/*",
+        "https://www.binance.com/*"
+      ],
+      "resources": [
+        "assets/content.ts-DJwLp5Lz.js"
+      ],
+      "use_dynamic_url": false
     }
   ]
 }
-
