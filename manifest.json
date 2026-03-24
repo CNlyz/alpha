@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content.ts-DWtgJpx2.js"
+        "assets/content.ts-DhPPJDzs.js"
       ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
@@ -39,7 +39,7 @@
         "https://www.binance.com/*"
       ],
       "resources": [
-        "assets/content.ts-DWtgJpx2.js"
+        "assets/content.ts-DhPPJDzs.js"
       ],
       "use_dynamic_url": false
     }
