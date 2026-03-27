@@ -23,11 +23,17 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content.ts-DHggTnc8.js"
+        "assets/content.ts-DhXCXErI.js"
       ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
-        "https://www.binance.com/*/alpha"
+        "https://www.binance.com/*/alpha",
+        "https://www.bitget.com/*/spot/*",
+        "https://www.bitget.com/*/spot"
+      ],
+      "exclude_matches": [
+        "https://www.bitget.com/*/api-doc/*",
+        "https://www.bitget.com/*/api-doc"
       ],
       "run_at": "document_idle"
     }
@@ -36,10 +42,12 @@
     {
       "matches": [
         "https://www.binance.com/*",
-        "https://www.binance.com/*"
+        "https://www.binance.com/*",
+        "https://www.bitget.com/*",
+        "https://www.bitget.com/*"
       ],
       "resources": [
-        "assets/content.ts-DHggTnc8.js"
+        "assets/content.ts-DhXCXErI.js"
       ],
       "use_dynamic_url": false
     }
