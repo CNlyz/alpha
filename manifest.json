@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content.ts-DhXCXErI.js"
+        "assets/content.ts-CWOppl5l.js"
       ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
@@ -47,7 +47,7 @@
         "https://www.bitget.com/*"
       ],
       "resources": [
-        "assets/content.ts-DhXCXErI.js"
+        "assets/content.ts-CWOppl5l.js"
       ],
       "use_dynamic_url": false
     }
