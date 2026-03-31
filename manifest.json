@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "Alpha Trade",
   "description": "通用 Chrome 插件骨架：后台服务、content 脚本、选项页与消息通信。",
   "permissions": [
@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content.ts-BQ52gbvJ.js"
+        "assets/content.ts-D_Psw3CR.js"
       ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
@@ -47,7 +47,7 @@
         "https://www.bitget.com/*"
       ],
       "resources": [
-        "assets/content.ts-BQ52gbvJ.js"
+        "assets/content.ts-D_Psw3CR.js"
       ],
       "use_dynamic_url": false
     }
