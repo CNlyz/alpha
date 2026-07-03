@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "Alpha Trade",
   "description": "通用 Chrome 插件骨架：后台服务、content 脚本、选项页与消息通信。",
   "permissions": [
@@ -23,13 +23,15 @@
   "content_scripts": [
     {
       "js": [
-        "assets/content.ts-D_Psw3CR.js"
+        "assets/content.ts-CRwajJYF.js"
       ],
       "matches": [
         "https://www.binance.com/*/alpha/*",
         "https://www.binance.com/*/alpha",
         "https://www.bitget.com/*/spot/*",
-        "https://www.bitget.com/*/spot"
+        "https://www.bitget.com/*/spot",
+        "https://web3.okx.com/token/*",
+        "https://web3.okx.com/*/token/*"
       ],
       "exclude_matches": [
         "https://www.bitget.com/*/api-doc/*",
@@ -41,13 +43,15 @@
   "web_accessible_resources": [
     {
       "matches": [
+        "https://web3.okx.com/*",
+        "https://web3.okx.com/*",
         "https://www.binance.com/*",
         "https://www.binance.com/*",
         "https://www.bitget.com/*",
         "https://www.bitget.com/*"
       ],
       "resources": [
-        "assets/content.ts-D_Psw3CR.js"
+        "assets/content.ts-CRwajJYF.js"
       ],
       "use_dynamic_url": false
     }
